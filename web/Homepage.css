@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    background-image: url("Assets/piano.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+}
+
+.Introduction {
+    background-color: azure;
+    opacity: .8;
+    display: inline-block;
+    max-width: 700px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.MyImage {
+    max-height: 200px;
+    margin: 20px;
+    float: left;
+}
+
+.btn {
+    background-color: #008ae6;
+    color: white;
+    margin: auto;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.IntroText {
+    margin-right: 20px;
+}
