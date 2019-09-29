@@ -17,7 +17,7 @@
         echo "x = $x <br>";
         $y = 2;
         echo "y = $y <br>";
-        echo "x + y = " . $x+$y ."";
+        echo "x + y = ", $x+$y;
         ?>
     </div>
     <script type="text/javascript" src="Homepage.js"></script>
