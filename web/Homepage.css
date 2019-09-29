@@ -35,8 +35,9 @@ body {
     border-radius: 2px;
 }
 
-btn:hover {
+.btn:hover {
     box-shadow: 2px 2px 4px #000;
+    cursor: pointer;
 }
 
 .Intro-Text {
