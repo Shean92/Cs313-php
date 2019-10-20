@@ -1,6 +1,6 @@
 CREATE TABLE public.user
 (
-	id SERIAL NOT NULL PRIMARY KEY,
+	userID SERIAL NOT NULL PRIMARY KEY,
 	username VARCHAR(100) NOT NULL UNIQUE,
 	password VARCHAR(100) NOT NULL,
     address VARCHAR(100) NOT NULL
@@ -8,7 +8,7 @@ CREATE TABLE public.user
 
 CREATE TABLE item
 (
-    id SERIAL NOT NULL PRIMARY KEY,
+    itemID SERIAL NOT NULL PRIMARY KEY,
     name VARCHAR(100) NOT NULL UNIQUE,
     price INT,
     quantity INT,
@@ -19,11 +19,11 @@ CREATE TABLE item
 
 CREATE TABLE cart
 (
-    id SERIAL NOT NULL PRIMARY KEY
+    cartID SERIAL NOT NULL PRIMARY KEY
 );
 
 ALTER TABLE public.user
-    ADD COLUMN cart_id INT NOT NULL REFERENCES cart(id) AFTER address;
+    ADD FOREIGN KEY (cartID) REFERENCES cart(cartID);
     
 ALTER TABLE cart
-    ADD COLUMN item_id INT NOT NULL REFERNCES item(id) AFTER id;
+    ADD FOREIGN KEY (itemID) REFERENCES item(itemID);
