@@ -41,7 +41,7 @@
       die();
     }
     
-    echo '<form action=\FinalProjectLogIn.php method=post>';
+    echo '<form action=\Authenticate.php method=post>';
     echo '<h3>Log In</h3>';
     echo 'Username: <input type=text name=username><br>';
     echo 'Password: <input type=text name=password><br>';

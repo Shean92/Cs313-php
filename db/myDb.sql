@@ -2,8 +2,8 @@ CREATE TABLE public.user
 (
 	userID SERIAL NOT NULL PRIMARY KEY,
 	username VARCHAR(100) NOT NULL UNIQUE,
-	password VARCHAR(100) NOT NULL,
-    address VARCHAR(100) NOT NULL
+	userPassword VARCHAR(100) NOT NULL,
+    address VARCHAR(100)
 );
 
 CREATE TABLE item
@@ -22,8 +22,18 @@ CREATE TABLE cart
     cartID SERIAL NOT NULL PRIMARY KEY
 );
 
+INSERT INTO public.user VALUES (0, 'cs313', 'crowdice');
+
+SELECT * FROM public.user;
+
 ALTER TABLE public.user
     ADD FOREIGN KEY (cartID) REFERENCES cart(cartID);
     
 ALTER TABLE cart
     ADD FOREIGN KEY (itemID) REFERENCES item(itemID);
+    
+ALTER TABLE public.user
+    DROP COLUMN password;
+    
+ALTER TABLE public.user
+    ADD COLUMN userPassword VARCHAR(100) NOT NULL;
