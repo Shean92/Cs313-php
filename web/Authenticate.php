@@ -42,6 +42,10 @@
           echo '<h4>Welcome '. $username . '!<h4>';
           echo '<a href=FinalProjectHome.php><button class=log-in>Shop</button></a>'
       }
+      else {
+          echo '<h4>There was an issue please log in again.</h4>';
+          echo '<a href=FinalProjectLogIn.php><button class=log-in>Log In</button></a>'
+      }
     }
     
     ?>
