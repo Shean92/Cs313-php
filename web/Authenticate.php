@@ -38,7 +38,7 @@
     
     foreach ($db->query('SELECT username, userPassword FROM public.user WHERE username =' . '\''. $username . '\'') as $row)
     {
-      if ($password === $row['userPassword']) {
+      if ($password == $row['userPassword']) {
           echo '<h4>Welcome '. $username . '!<h4>';
           echo '<a href=FinalProjectHome.php><button class=log-in>Shop</button></a>'
       }
