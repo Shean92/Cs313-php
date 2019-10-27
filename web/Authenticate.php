@@ -36,7 +36,7 @@
     $username = $_POST['username'];
     $password = $_POST['userPassword'];
     
-    foreach ($db->query('SELECT username, userPassword FROM public.user WHERE username =' . '\''. $username . '\'') as $row)
+    /*foreach ($db->query('SELECT username, userPassword FROM public.user WHERE username =' . '\''. $username . '\'') as $row)
     {
       if ($password == $row['userPassword']) {
           echo '<h4>Welcome '. $username . '!<h4>';
@@ -46,7 +46,7 @@
           echo '<h4>There was an issue please log in again.</h4>';
           echo '<a href=FinalProjectLogIn.php><button class=log-in>Log In</button></a>'
       }
-    }
+    }*/
     
     ?>
     
