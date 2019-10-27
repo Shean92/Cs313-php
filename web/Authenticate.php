@@ -34,11 +34,11 @@
     }
     
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = $_POST['userPassword'];
     
-    foreach ($db->query('SELECT username, password FROM public.user WHERE username =' . '\''. $username . '\'') as $row)
+    foreach ($db->query('SELECT username, userPassword FROM public.user WHERE username =' . '\''. $username . '\'') as $row)
     {
-      if ($password === $row['password']) {
+      if ($password === $row['userPassword']) {
           echo '<h4>Welcome '. $username . '!<h4>';
           echo '<a href=FinalProjectHome.php><button class=log-in>Shop</button></a>'
       }

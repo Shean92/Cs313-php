@@ -9,15 +9,6 @@
         <a href="CrowdiceWK3Browse.html"><img class="crowdice-icon" src="Assets/CrowDiceWhite.png"></a>
         <p class="subtitle">For When You're in a "Dicey" Situation</p>
     </div>
-    <form>
-        <h3>Log In</h3>
-        <div>Username:</div>
-        <input type="text" name="username">
-        <br>
-        <div>Password:</div>
-        <input type="text" name="password"><br>
-        <button class="log-in">Log In</button>
-    </form>
     <?php
     try
     {
@@ -44,7 +35,7 @@
     echo '<form action=\Authenticate.php method=post>';
     echo '<h3>Log In</h3>';
     echo 'Username: <input type=text name=username><br>';
-    echo 'Password: <input type=text name=password><br>';
+    echo 'Password: <input type=text name=userPassword><br>';
     echo '<input type=submit class=log-in value=LogIn>';
     ?>
     
