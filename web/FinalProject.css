@@ -45,6 +45,7 @@ h2 {
 .browse-list {
     margin: 20px;
     max-width: 700px;
+    min-width: 700px;
     min-height: 200px;
     background-color: azure;
     border: solid;
@@ -59,6 +60,7 @@ h2 {
     border-bottom: solid;
     border-color: black;
     text-align: center;
+    min-width: 700px;
 }
 
 .browse-item-img {
@@ -69,6 +71,7 @@ h2 {
 
 .browse-item-text {
     margin: 10px;
+    max-width: inherit;
 }
 
 .browse-item-button {

@@ -37,3 +37,10 @@ ALTER TABLE public.user
     
 ALTER TABLE public.user
     ADD COLUMN userPassword VARCHAR(100) NOT NULL;
+    
+SELECT t1.col, t3.col FROM table1 join table2 ON table1.primarykey = table2.foreignkey
+                                  join table3 ON table2.primarykey = table3.foreignkey
+                                  
+SELECT public.user, item FROM 
+
+heroku pg:psql

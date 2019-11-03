@@ -31,21 +31,22 @@
     <div class="title-section">
         <img class="crowdice-icon" src="Assets/CrowDiceWhite.png" href="FinalProjectHome.php">
         <p class="subtitle">For When You're in a "Dicey" Situation</p>
-        <img class="icon" href="FinalProjectCart.php" src="Assets/CartIcon.png">
-        <div class="cart-amount">
-            
-        </div>
+        <img class="icon" href="FinalProjectCart.html" src="Assets/CartIcon.png">
     </div>
     <div class="browse-list">
         <div class="browse-item">
-            <img class="browse-item-img" src="Assets/Boxes.jpg">
-            <h3 class="browse-item-text-title">Dice Box</h3>
-            <div class="browse-item-text"><button class="browse-item-button" type="button">Add to Cart</button>This is a dice box, it will hold all your dice, its also great for rolling. Lorem ipsum and whatnot hahaha.</div> 
+            <img class="browse-item-img" src="Assets/Boxes.jpg" name="BoxImage">
+            <h3 class="browse-item-text-title" name="BoxItemName">Dice Box</h3>
+            <div class="browse-item-text"><a class="browse-item-button">Add to Cart<br><div name="BoxPrice">$20.00</div></a>
+                <?php
+                    $sql = "INSERT INTO  (username, password, address) VALUES ('". $username ."', '". $password ."', '". $address ."')";
+                ?>
+                <div name="BoxDescription">This is a dice box, it will hold all your dice, its also great for rolling.</div></div>
         </div>
         <div class="browse-item">
-            <img class="browse-item-img" src="Assets/Books.jpg">
-            <h3 class="browse-item-text-title">Books</h3>
-            <div class="browse-item-text"><button class="browse-item-button" type="button">Add to Cart</button>This is a book. It's great for taking notes. This is crazy stuff man. What are you gonna do?</div>
+            <img class="browse-item-img" src="Assets/Books.jpg" name="BookImage">
+            <h3 class="browse-item-text-title" name="BookItemName">Books</h3>
+            <div class="browse-item-text"><a class="browse-item-button">Add to Cart<br><div name="BoxPrice">$15.00</div></a><div name="Box Description">This is a book. It's great for taking notes.</div></div>
             
         </div>
     </div>
