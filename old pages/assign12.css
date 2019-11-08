@@ -1,0 +1,210 @@
+body{
+    background-color: black;
+    background-image: url("Assets/piano.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+.error_text{
+    display:none;
+    color: red;
+}
+
+#first_student input{
+    max-width: 20%;
+
+}
+
+#location{
+    background-color: #008ae6;
+    color: white;
+    margin: auto;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+#location input:hover{
+    cursor: pointer;
+}
+
+#room{
+    background-color: #008ae6;
+    color: white;
+    margin: auto;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+#room input:hover{
+    cursor: pointer;
+}
+
+#time_slot{
+    background-color: #008ae6;
+    color: white;
+    margin: auto;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+#time_slot input:hover{
+    cursor: pointer;
+}
+
+.dropbtn{
+    background-color: #008ae6;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.dropbtn:hover{
+    background-color: darkblue;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.performanceList{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 124.2px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.performanceList p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.performanceList p:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.dropbtn_2{
+    background-color: #008ae6;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.dropbtn_2:hover{
+    background-color: darkblue;
+}
+
+.skillList{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 124.2px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.skillList p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.skillList p:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.dropbtn_3{
+    background-color: #008ae6;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.dropbtn_3:hover{
+    background-color: darkblue;
+}
+
+.instrumentList{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 124.2px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.instrumentList p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.instrumentList p:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+#register{
+    background-color: #008ae6;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#register:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+#clear{
+    background-color: #008ae6;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#clear:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+.duet{
+    display: none;
+}
+
+.show{display:block;}

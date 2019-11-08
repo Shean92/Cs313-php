@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>assignment12</title>
+   <link rel="stylesheet" type="text/css" href="assign12.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+   </script>
+</head>
+<body>
+	<h1>The Piano Festival Sign Up</h1>
+   <form id="form_elements">
+      <p class="error_text" id="performance_error">* Missing Performance Type</p>
+      <div class="dropdown">
+         <button type="button" id="performance" class="dropbtn reqField" data-value=""> Performance </button>
+            <div class="performanceList">
+               <p class="perfType" id="performance_0" data-value="Solo">Solo</p>
+               <p class="perfType" id="performance_1" data-value="Duet">Duet</p>
+               <p class="perfType" id="performance_2" data-value="Concerto">Concerto</p>
+            </div>
+      </div><br><br>
+
+
+      <div id="first_student">
+         <p class="error_text" id="first_name_error">* Missing First Name</p>
+         <p>First Name: <input type="text" class="reqField" id="first_name"><br></p>
+         <p class="error_text" id="last_name_error">* Missing Last Name</p>
+         <p>Last Name: <input type="text" class="reqField" id="last_name"><br></p>
+         <p class="error_text" id="student_id_error">* Missing Student ID</p>
+         <p>Student ID: <input type="text" class="reqField" id="student_id"><br></p>
+      </div>
+
+      <div class="duet">
+         Person 2<br><br>
+         <p class="error_text" id="first_name_2_error">* Missing First Name</p>
+         <p>First Name: <input type="text" id="first_name_2"><br></p>
+         <p class="error_text" id="last_name_2_error">* Missing Last Name</p>
+         <p>Last Name: <input type="text" id="last_name_2"><br></p>
+         <p class="error_text" id="student_id_2_error">* Missing Student ID</p>
+         <p>Student ID: <input type="text" id="student_id_2"><br></p>
+
+      </div>
+
+      <p class="error_text" id="skill_error">* Missing Skill</p>
+      <div class="dropdown">
+         <button type="button" id="skill" class="dropbtn reqField" data-value=""> Skill Level </button>
+            <div class="skillList">
+               <p class="skill" id="skill_0" data-value="Beginner">Beginner</p>
+               <p class="skill" id="skill_1" data-value="Intermediate">Intermediate</p>
+               <p class="skill" id="skill_2" data-value="Pre-Advanced">Pre-Advanced</p>
+               <p class="skill" id="skill_3" data-value="Advanced">Advanced</p>
+            </div>
+      </div><br><br>
+
+      <p class="error_text" id="instrument_error">* Missing Instrument</p>
+      <div class="dropdown">
+         <button type="button" id="instrument" class="dropbtn reqField" data-value=""> Instrument </button>
+            <div class="instrumentList">
+               <p class="instrument" id="instrument_0" data-value="Piano">Piano</p>
+               <p class="instrument" id="instrument_1" data-value="Voice">Voice</p>
+               <p class="instrument" id="instrument_2" data-value="String">String</p>
+               <p class="instrument" id="instrument_3" data-value="Organ">Organ</p>
+            </div>
+      </div><br><br>
+
+      <div id="location">
+         Location:<br>
+            <input type="radio" name="location" id="location_0" value="Snow" checked="checked">Snow</input><br>
+            <input type="radio" name="location" id="location_1" value="Kimball">Kimball</input><br>
+      </div><br><br>
+
+      <div id="room">
+         Room#<br>
+         <input type="radio" name="classRoom" id="room_0" value="315" checked="checked">315</input><br>
+         <input type="radio" name="classRoom" id="room_1" value="320">320</input><br>
+         <input type="radio" name="classRoom" id="room_2" value="418">418</input><br>
+         <input type="radio" name="classRoom" id="room_3" value="434">434</input><br>
+      </div><br><br>
+
+      <div id="time_slot">
+         Time Slot<br>
+         <input type="radio" name="time" id="time_slot_0" value="3:00" checked="checked">3:00</input><br>
+         <input type="radio" name="time" id="time_slot_1" value="3:30">3:30</input><br>
+         <input type="radio" name="time" id="time_slot_2" value="4:00">4:00</input><br>
+         <input type="radio" name="time" id="time_slot_3" value="4:30">4:30</input><br>
+      </div><br><br>
+
+      <button type="button"  id="register">Register Student</button>
+      <button type="reset" id="clear">Clear</button>
+      <div>
+         <ul id="end">
+         </ul>
+      </div>
+   </form>
+   <script type="text/javascript" src="assign12.js"></script>
+</body>
+</html>
