@@ -19,20 +19,24 @@ const server = http.createServer(function (req, res) {
     }
     else if(req.url == '/getData') {
         res.writeHead(200, {'Content-Type': 'application/json'});
-        fs.writeFile("output.json", jsonContent, 'utf8', function (err) {
+        /*fs.writeFile("output.json", jsonContent, 'utf8', function (err) {
             if (err) {
                 console.log("An error occured while writing JSON Object to File.");
                 return console.log(err);
             }
             console.log("JSON file has been saved.");
-        });
-        fs.readFile("output.json", function(err, content) {
+        });*/
+        /*fs.readFile("output.json", function(err, content) {
             if (err) {
                 console.log("An error occured while reading JSON Object to File.");
                 return console.log(err);
             }
-            res.write(content);
-        });
+            var obj = JSON.parse(content);
+            var newjsoncontent = JSON.stringify(obj);
+            console.log(newjsoncontent);
+            
+        });*/
+        res.write('{"name":"Shean Brunner","class":"cs313"}');
     }
     else {
         res.writeHead(404, {'Content-Type': 'text/html'});
